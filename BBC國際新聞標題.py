@@ -9,7 +9,7 @@ soup=BeautifulSoup(response.text,'lxml')
 titles=soup.find_all('a',{'class':'bbc-uk8dsi emimjbx0'})
 
 title_list=[]
-for title1 in titles:
-    title_list.append(title1.getText())
+for title2 in titles:
+    title_list.append(title2.getText())
 
 print(title_list)
